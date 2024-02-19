@@ -1,14 +1,12 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
+import MainContent from './mainContent'
 
-import ImageUpload from './ImageUpload'
+
 
 function App() {
-
-  const [prediction, setPrediction] = useState('')
-
   return (
     <div>
-      <ImageUpload />
+      <MainContent /> 
     </div>
   )
 }
