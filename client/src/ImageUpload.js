@@ -6,6 +6,8 @@ import "./ImageUpload.css";
 function ImageUpload() {
   const fileTypes = ["JPG", "PNG"];
   const [file, setFile] = useState(null);
+  const [predictionm, setPrediction] = useState("");
+  const [confidence, setConfidence] = useState("");
 
   const handleFileChange = (file) => {
     setFile(file);
@@ -27,6 +29,8 @@ function ImageUpload() {
           },
         }
       );
+      setPrediction(response.data.prediction);
+      setConfidence(response.data.confidence);
       console.log(response.data);
     } catch (error) {
       console.error(error);
@@ -46,6 +50,10 @@ function ImageUpload() {
           </div>
         </FileUploader>
         <button type="submit">Ladda upp</button>
+        <div className="prediction">
+          <h3>{predictionm}</h3>
+          <h3>{confidence}%</h3>
+        </div>
       </form>
     </div>
   );

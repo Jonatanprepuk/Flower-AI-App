@@ -20,7 +20,8 @@ class classify_image:
         self.confidence = self.calculate_confidence(prediction[0])
         
     def get_confidence(self):
-        return self.confidence 
+        confidence = round(self.confidence, 2)
+        return confidence 
     
     def get_prediction(self):
         return self.prediction

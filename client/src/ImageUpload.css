@@ -1,15 +1,22 @@
-.file-uploader {
-    width: 300px;
-    height: 50px;
-    background-color: white;
-    border-radius: 6px;
-    margin: 0 auto;
-    position: absolute;
-    top: -150px;
-    text-align: center;
-    
-    left: 400px;
-    transform: translate(-50%, -50%);
-    border: 1px solid black;
+.uploader-container { 
+  width: 300px;
+  height: 50px;
+  background-color: white;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: 1px solid black;
+  text-align: center;
+}
 
-  }
+.prediction {
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 0 #000000, -1px 0 #000000, 0 1px #000000, 0 -1px #000000,
+               1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
+  letter-spacing: 2px;
+}
