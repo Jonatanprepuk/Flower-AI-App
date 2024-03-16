@@ -20,7 +20,7 @@ def upload_file():
         model.predict()
         
         print(jsonify({'prediction': model.get_prediction()
-                       ,'confidence': model.get_confidence()})) 
+                       ,'confidence': model.get_confidence()}))
         
         return jsonify({'prediction': model.get_prediction()
                         ,'confidence': model.get_confidence()}), 200 
