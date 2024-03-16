@@ -21,6 +21,7 @@ Uses Tensorflow and Keras to identify diffrent flowers with ML.
 5. Run the server: `python app.py`
 
 ### Frontend
+Basic React.JS app to use the ML-model.
 
 1. Navigate to the `client` directory.
 2. Install the required packages: `npm install`
