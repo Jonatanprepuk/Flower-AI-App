@@ -23,6 +23,9 @@
   justify-content: center; 
   margin-bottom: 10px;
 }
+.prediction-text{
+  font-size: 20px;
+}
 
 .uploaded-image{
   height: 40px;
@@ -36,8 +39,7 @@
 }
 
 .dropbox-text{
-  margin-top: 5px;
-  margin-bottom: 0;
+  margin: 5px 0px 0px 5px ;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,7 +57,7 @@
   color: #fff;
   cursor: pointer;
   display: inline-flex;
-  font-family: "JetBrains Mono",monospace;
+  
   height: 30px;
   justify-content: center;
   line-height: 1;
