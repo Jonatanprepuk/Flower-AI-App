@@ -6,7 +6,7 @@ import os
 from io import BytesIO
 
 app = Flask(__name__)
-CORS(app) # Gör det möjligt för din React-app att kommunicera med Flask-servern
+CORS(app) 
 
 @app.route('/upload', methods=['POST'])
 def upload_file():
